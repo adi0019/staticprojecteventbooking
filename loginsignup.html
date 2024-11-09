@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            width: 350px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-btn, .signup-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            background-color: #007bff;  /* Blue for login */
+            color: white;
+        }
+
+        .signup-btn {
+            background-color: #6c757d;  /* Grey for signup */
+            color: white;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password">
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <button class="signup-btn">Sign Up</button>
+    </div>
+</body>
+</html>
